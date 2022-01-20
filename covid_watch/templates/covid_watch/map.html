@@ -1,0 +1,22 @@
+{% extends "covid_watch/layout.html" %}
+{% load static %}
+
+{% block body%}
+
+    <div>
+        <P>
+            Use the map below to help find CoVid testing areas near you.
+        </P>
+        <br>
+        <p>
+            Click the 'Pan to Current Location' button to get your location. Testing sites will have red markers.
+        </p>
+    </div>
+
+    <div id="map">
+    </div>
+
+    
+    <script src="{% static 'covid_watch/map.js' %}" ></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&libraries=places&callback=initMap"></script>
+{% endblock %}

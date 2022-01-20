@@ -1,0 +1,96 @@
+{% extends "covid_watch/layout.html" %}
+{% load static %}
+
+{% block body %}
+<div style="text-align: center;">
+    <button data-info="overview">Overview</button>
+    <button data-info="symptoms">Symptoms</button>
+    <button data-info="prevention">Prevention</button>
+</div>
+<br>
+
+<div id="overview" class="info ">
+    <div class="row">
+        <div class="col-lg-6">
+            <p>
+                Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus.
+            </p>
+            <p>
+                Most people infected with the virus will experience mild to moderate respiratory illness and recover without requiring special treatment. However, some will become seriously ill and require medical attention. Older people and those with underlying medical conditions like cardiovascular disease, diabetes, chronic respiratory disease, or cancer are more likely to develop serious illness. Anyone can get sick with COVID-19 and become seriously ill or die at any age.
+            </p>
+            <P>
+                The best way to prevent and slow down transmission is to be well informed about the disease and how the virus spreads. Protect yourself and others from infection by staying at least 1 metre apart from others, wearing a properly fitted mask, and washing your hands or using an alcohol-based rub frequently. Get vaccinated when it’s your turn and follow local guidance.
+            </P>
+            <p>
+                The virus can spread from an infected person’s mouth or nose in small liquid particles when they cough, sneeze, speak, sing or breathe. These particles range from larger respiratory droplets to smaller aerosols. It is important to practice respiratory etiquette, for example by coughing into a flexed elbow, and to stay home and self-isolate until you recover if you feel unwell.
+            </p>
+        </div>
+        <div class="col-lg-6">
+            <img style="width: 100%;" src="{% static 'covid_watch/images/CoronavirusPic.jpeg' %}" alt="CoronavirusPic"></img>
+        </div>
+    </div>
+</div>
+
+<div id="symptoms" class="info">
+    <div class="row">
+        <div class="col-lg-6">
+            <img style="width: 100%;" src="{% static 'covid_watch/images/symptoms_web.png' %}" alt="SymptomsPic"></img>
+        </div>
+        <div class="col-lg-6">
+            <p>
+                Symptoms may appear 2-14 days after exposure to the virus. People with these symptoms may have COVID-19:
+                <li>Fever or chills</li>
+                <li>Cough</li>
+                <li>Shortness of breath or difficulty breathing</li>
+                <li>Fatigue</li>
+                <li>Muscle or body aches</li>
+                <li>Headache</li>
+                <li>New loss of taste or smell</li>
+                <li>Sore throat</li>
+                <li>Congestion or runny nose</li>
+                <li>Nausea or vomiting</li>
+                <li>Diarrhea</li>
+            </p>
+            <br>
+            <p>
+                Look for emergency warning signs for COVID-19. If someone is showing any of these signs, seek emergency medical care immediately:
+                <li>Trouble breathing</li>
+                <li>Persistent pain or pressure in the chest</li>
+                <li>New confusion</li>
+                <li>Inability to wake or stay awake</li>
+                <li>Pale, gray, or blue-colored skin, lips, or nail beds, depending on skin tone</li>
+            </p>
+            <p>
+                Call your medical provider for any other symptoms that are severe or concerning to you.
+            </p>
+        </div>        
+    </div>
+</div>
+
+
+<div id="prevention" class="info">
+    <div class="row">
+        <div class="col-lg-6">
+            <p>
+                To help prevent the spread of COVID-19:
+                <li>Wear a mask to protect yourself and others and stop the spread of COVID-19.</li>
+                <li>Stay at least 6 feet (about 2 arm lengths) from others who don’t live with you.</li>
+                <li>Avoid crowds and poorly ventilated spaces. The more people you are in contact with, the more likely you are to be exposed to COVID-19.</li>
+                <li>Get a COVID-19 vaccine when it’s available to you.</li>
+                <li>Clean your hands often, either with soap and water for 20 seconds or a hand sanitizer that contains at least 60% alcohol.</li>
+                <li>Avoid close contact with people who are sick.</li>
+                <li>Cover your cough or sneeze with a tissue, then throw the tissue in the trash.</li>
+                <li>Clean frequently touched objects and surfaces daily. If someone is sick or has tested positive for COVID-19, disinfect frequently touched surfaces.</li>
+                <li>Monitor your health daily.</li>
+            </p>
+        </div>
+        <div class="col-lg-6">
+            <img style="width: 100%;" src="{% static 'covid_watch/images/COVID-19-Prevention-Infographic.jpeg' %}" alt="PrenventionPic"></img>
+        </div>
+    </div>    
+</div>
+
+<script src="{% static 'covid_watch/info.js' %}"></script>
+
+
+{% endblock %}
